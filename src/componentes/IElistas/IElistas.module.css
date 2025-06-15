@@ -1,0 +1,50 @@
+.resumenContainer {
+  margin: 20px auto;
+  color: #000;
+  max-width: 600px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resumenTotales {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.cuadroIngreso,
+.cuadroEgreso {
+  flex: 1;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #babbbb;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.cuadroEgreso {
+  background-color: #babbbb;
+}
+
+.saldo {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.saldoPositivo {
+  background-color: #6dff79;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.saldoNegativo {
+  background-color: #ff788c;
+  color: #c62828;
+  font-weight: bold;
+}

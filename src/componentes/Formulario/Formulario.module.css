@@ -1,0 +1,105 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 570px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.boton {
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #1976d2;
+}
+
+.listaContenedor {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #444;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.tabla td:last-child {
+  text-align: right;
+}
+
+.botonEliminar {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botonEliminar:hover {
+  background-color: #c62828;
+}
