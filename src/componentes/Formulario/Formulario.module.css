@@ -1,10 +1,46 @@
+.dashboardContenedor {
+  background-color: #5c5858;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  text-align: center;
+  color: #ffffff;
+  margin: 20px;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 5vw, 3rem); /* responsive font size */
+  word-wrap: break-word;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  margin: 20px 0;
+  word-break: break-word;
+}
+
+.ingreso {
+  color: green;
+}
+
+.egreso {
+  color: red;
+}
+
 .formulario {
+  color: #000;
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 20px auto;
-  padding: 20px;
-  max-width: 570px;
+  padding: 10px;
+  max-width: 600px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,4 +138,23 @@
 
 .botonEliminar:hover {
   background-color: #c62828;
+}
+
+@media (max-width: 400px) {
+  .dashboardContenedor {
+    padding: 10px;
+  }
+
+  .tarjeta {
+    width: 100%;
+  }
+
+  .formulario {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
 }

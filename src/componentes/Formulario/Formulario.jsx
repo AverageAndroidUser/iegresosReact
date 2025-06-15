@@ -50,12 +50,12 @@ export const Formulario = () => {
   }
 
   return (
-    <div>
-      <h1>Lista de Ingresos y Egresos</h1>
+    <div className={styles.dashboardContenedor}>
+      <h1 className={styles.titulo}>CONTROL DE GASTOS</h1>
       <IElistas listaI={listaI} listaE={listaE}></IElistas>
       <div>
-        <h2>Registrar Egreso / Ingreso</h2>
         <form onSubmit={handleSubmit} className={styles.formulario}>
+         <h2 className={styles.subtitulo}> REGISTRAR <strong className={styles.ingreso}>INGRESOS</strong> O <strong className={styles.egreso}>EGRESOS</strong></h2>
           <input
             type="text"
             placeholder="Descripción"

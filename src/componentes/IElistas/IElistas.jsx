@@ -13,10 +13,10 @@ export const IElistas = ({listaI, listaE}) => {
     <div className={styles.resumenContainer}>
       <div className={styles.resumenTotales}>
         <div className={styles.cuadroIngreso}>
-          <h4>INGRESOS ${totalIngresos}</h4>
+          <h4>INGRESOS ${totalIngresos.toLocaleString()}</h4>
         </div>
         <div className={styles.cuadroEgreso}>
-          <h4>EGRESOS ${totalEgresos}</h4>
+          <h4>EGRESOS ${totalEgresos.toLocaleString()}</h4>
         </div>
       </div>
       <div
@@ -24,7 +24,7 @@ export const IElistas = ({listaI, listaE}) => {
           total < 0 ? styles.saldoNegativo : styles.saldoPositivo
         }`}
       >
-        <h4>SALDO ${total}</h4>
+        <h4>SALDO ${total.toLocaleString()}</h4>
         <p></p>
       </div>
     </div>

@@ -25,7 +25,7 @@ export const Ingresos = ({lista, EliminarI}) => {
             {lista.map((ingreso, index) => (
               <tr key={index}>
                 <td>{ingreso.descripcion}</td>
-                <td>${ingreso.valor}</td>
+                <td>${ingreso.valor.toLocaleString()}</td>
                 <td>
                   <button className={styles.botonEliminar} onClick={() => EliminarI(index)}> Eliminar</button>
                 </td>
