@@ -7,6 +7,7 @@ import { IElistas } from '../IElistas/IElistas';
 import styles from './Formulario.module.css';
 
 export const Formulario = () => {
+
   const [descripcion, setDescripcion] = useState('');
   const [valor, setValor] = useState(0);
   const [tipo, setTipo] = useState(false);
@@ -48,7 +49,16 @@ export const Formulario = () => {
     const nuevaLista = listaI.filter((_, i) => i !== index);
     setListaI(nuevaLista);
   }
-
+  const ActualizarI = (index, descripcion, valor) =>{
+    const nuevaLista = listaI.map((ingreso, i) => i === index ?
+      new Iegresos(descripcion, Number(valor), true) : ingreso);
+    setListaI(nuevaLista);
+  }
+  const ActualizarE = (index, descripcion, valor) =>{
+    const nuevaLista = listaE.map((egreso, i) => i === index ?
+      new Iegresos(descripcion, Number(valor), false) : egreso);
+    setListaE(nuevaLista);
+  }
   return (
     <div className={styles.dashboardContenedor}>
       <h1 className={styles.titulo}>CONTROL DE GASTOS</h1>
@@ -91,8 +101,8 @@ export const Formulario = () => {
         </form>
       </div>
       <div className={styles.listaContenedor}>
-        <Egresos lista={listaE} EliminarE={EliminarE} />
-        <Ingresos lista={listaI} EliminarI={EliminarI} />
+        <Egresos lista={listaE} EliminarE={EliminarE} ActualizarE={ActualizarE}/>
+        <Ingresos lista={listaI} EliminarI={EliminarI} ActualizarI={ActualizarI}/>
       </div>
     </div>
   )
