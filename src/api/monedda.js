@@ -1,5 +1,5 @@
 //LLamados a API
-
+//verMonedas
 export const verMonedas = async () => {
   try {
     const response = await fetch("ruta", {
@@ -17,3 +17,6 @@ export const verMonedas = async () => {
     return Promise.reject(error);
   }
 };
+//CrearMoneda
+//EliminarMonedas
+//EditarMonedas
